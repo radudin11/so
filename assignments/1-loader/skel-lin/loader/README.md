@@ -63,7 +63,7 @@ Translates to:
     ending address.
 
 ```
-void *page = mmap(pageStartAddress, pageSize, PROT_READ | PROT_WRITE,
+void *page = mmap(pageStartAddress, pageSize, PROT_READ | rPROT_WRITE,
 				MAP_PRIVATE | MAP_ANONYMOUS | MAP_FIXED, -1, 0);
 ```
 Map a page that may be read or written (PROT_READ | PROT_WRITE):
